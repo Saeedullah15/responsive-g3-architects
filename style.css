@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 200px 100px;
+    padding: 30px 200px 50px;
 }
 
 .header-container h3 {
@@ -94,7 +94,7 @@ header {
 .brand-new-info p {
     margin-top: 20px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     color: #727272;
 }
 
@@ -174,7 +174,7 @@ header {
 .features-info p {
     margin-top: 20px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     color: #727272;
 }
 
@@ -189,5 +189,125 @@ header {
         grid-template-columns: repeat(1, 1fr);
         margin-right: 0px;
         margin-bottom: 40px;
+    }
+}
+
+/* features-2 section styles */
+.features-2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 200px;
+}
+
+.features-2-details {
+    width: 40%;
+}
+
+.features-2-details>p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+.features-2-details-headings {
+    font-weight: 700;
+    font-size: 35px;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+}
+
+.features-2-details-headings h3 {
+    margin-left: 20px;
+}
+
+.features-2-img {
+    width: 60%;
+    position: relative;
+    padding-left: 90px;
+    padding-bottom: 75px;
+}
+
+.features-2-img button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 120px;
+    background: #FF900E;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.features-2-img span {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.features-2-img img {
+    width: 100%;
+}
+
+.features-2-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.features-2-card h6 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+}
+
+.features-2-card p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .features-2-container {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding: 20px;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .features-2-img button {
+        position: relative;
+        width: 90%;
+    }
+
+    .features-2-details {
+        width: 100%;
+    }
+
+    .features-2-img {
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features-2-img img {
+        width: 90%;
     }
 }
