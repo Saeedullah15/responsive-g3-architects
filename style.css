@@ -315,12 +315,12 @@ header {
 /* facts section styles */
 .facts-container {
     margin: 0px 240px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 
 .facts-container h3 {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 30px;
     color: #131313;
 }
 
@@ -374,5 +374,71 @@ header {
         row-gap: 10px;
         justify-content: center;
         align-items: center;
+    }
+}
+
+/* sponsor section styles */
+.sponsor-container {
+    margin-bottom: 100px;
+}
+
+.sponsor-container h3 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #131313
+}
+
+.sponsor-container p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #727272;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.sponsor-logo {
+    margin: 0px 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sponsor-logo img {
+    width: 120px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 576px) {
+    .sponsor-logo {
+        flex-direction: column;
+        margin: 0px;
+        row-gap: 20px;
+    }
+
+    .sponsor-container {
+        margin: 0px 20px 50px;
+    }
+}
+
+/* footer styles */
+footer {
+    background: #FFF4E7;
+    border-radius: 8px;
+    padding: 20px 0px;
+    margin: 0px 240px 60px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #424242;
+}
+
+@media only screen and (max-width: 576px) {
+    footer {
+        margin: 0px 20px 30px;
     }
 }
