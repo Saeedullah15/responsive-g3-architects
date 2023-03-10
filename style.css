@@ -346,6 +346,10 @@ header {
     text-align: center;
 }
 
+.card:hover {
+    transform: scale(1.1);
+}
+
 .card h3 {
     font-weight: 600;
     font-size: 35px;
@@ -374,6 +378,50 @@ header {
         row-gap: 10px;
         justify-content: center;
         align-items: center;
+    }
+}
+
+/* why choose us section styles */
+.choose-container {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    border-right: 5px solid #FF900E;
+    padding: 20px;
+}
+
+.choose-container h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #131313
+}
+
+.reason {
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+}
+
+.reason li {
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+.icon-1 {
+    color: #FF900E;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+    .choose-container {
+        width: 80%;
+        height: 100%;
     }
 }
 
